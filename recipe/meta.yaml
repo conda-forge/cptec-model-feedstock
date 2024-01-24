@@ -41,7 +41,7 @@ test:
 
 about:
   home: https://github.com/framework-CPTEC/
-  summary: Módulo para distribuição de Modelos Numéricos.
+  summary: Módulo para distribuição de Modelos Numéricos CPTEC/INPE.
   license: MIT
   license_file: LICENSE
 

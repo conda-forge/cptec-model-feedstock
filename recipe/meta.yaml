@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -20,6 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.10
+    - pynio
     - numpy
     - pandas
     - matplotlib-base
@@ -40,9 +41,8 @@ test:
     - pip
 
 about:
-  home: https://github.com/framework-CPTEC/
-  summary: Módulo para distribuição de Modelos Numéricos CPTEC/INPE.
-  license: MIT
+  home: https://cptec-model.readthedocs.io/en/latest/index.html
+  summary: Módulo para distribuição de Modelos Numéricos CPTEC/INPE. O pacote Python facilita a distribuição de dados brutos dos Modelos Numéricos de forma segmentada/particionada. Com esse pacote o usuário não necessita fazer o Download de todo o volume bruto. O pacote auxilia a manipular somente a sua necessidade.
   license_file: LICENSE
 
 extra:

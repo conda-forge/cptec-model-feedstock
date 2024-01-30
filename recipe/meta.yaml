@@ -26,7 +26,6 @@ requirements:
     - pycurl
     - cfgrib
     - netcdf4
-    - pynio
     - xarray
     - dask-core
     - scipy

@@ -30,6 +30,7 @@ requirements:
     - xarray
     - dask-core
     - scipy
+    - pytest ==7.1.1
     - pytest-json-report    
     - xesmf ==0.3.0 
     

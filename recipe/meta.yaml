@@ -20,13 +20,13 @@ requirements:
     - pip
   run:
     - python >=3.10
-    - pynio
     - numpy
     - pandas
     - matplotlib-base
     - pycurl
     - cfgrib
     - netcdf4
+    - pynio
     - xarray
     - dask-core
     - scipy

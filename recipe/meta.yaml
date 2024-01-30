@@ -26,11 +26,13 @@ requirements:
     - pycurl
     - cfgrib
     - netcdf4
+    - pynio
     - xarray
     - dask-core
     - scipy
+    - pytest-json-report    
     - xesmf ==0.3.0 
-
+    
 test:
   imports:
     - cptecmodel

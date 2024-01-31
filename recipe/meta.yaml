@@ -45,6 +45,8 @@ test:
 about:
   home: https://cptec-model.readthedocs.io/en/latest/index.html
   summary: Módulo para distribuição de Modelos Numéricos CPTEC/INPE de forma segmentada/particionada. Com esse pacote o usuário não necessita fazer o Download de todo o volume bruto.
+  license: MIT
+  license_family: MIT
   license_file: LICENSE
 
 extra:

@@ -3,11 +3,11 @@ About cptec-model-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cptec-model-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/framework-CPTEC/
+Home: https://cptec-model.readthedocs.io/en/latest/index.html
 
-Package license: MIT
+Package license: 
 
-Summary: Módulo para distribuição de Modelos Numéricos.
+Summary: Módulo para distribuição de Modelos Numéricos CPTEC/INPE de forma segmentada/particionada. Com esse pacote o usuário não necessita fazer o Download de todo o volume bruto.
 
 Current build status
 ====================

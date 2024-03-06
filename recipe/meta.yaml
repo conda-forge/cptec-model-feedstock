@@ -1,5 +1,5 @@
 {% set name = "cptec-model" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cptec-model-{{ version }}.tar.gz
-  sha256: c518dfb899373ac4dae8e3d3cbb6707037f1c1cbf4d988410972480371a38565
+  sha256: 675abd6fb736ca7ee282486d67ef535dc12998c33cbfbc6c1fa68d3399b8044e
 
 build:
   noarch: python

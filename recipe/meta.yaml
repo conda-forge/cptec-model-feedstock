@@ -10,8 +10,6 @@ source:
   sha256: 675abd6fb736ca7ee282486d67ef535dc12998c33cbfbc6c1fa68d3399b8044e
 
 build:
-  force_use_keys:
-    - pynio
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
@@ -20,6 +18,7 @@ requirements:
   host:
     - python >=3.10
     - pip
+    - pynio
   run:
     - python >=3.10
     - numpy

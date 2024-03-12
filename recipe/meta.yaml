@@ -23,7 +23,7 @@ requirements:
     - python >=3.10
     - numpy
     - pandas
-    - matplotlib-base
+    - matplotlib
     - pycurl
     - cfgrib
     - netcdf4

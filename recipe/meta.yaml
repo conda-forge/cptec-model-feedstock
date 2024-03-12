@@ -18,6 +18,7 @@ requirements:
   host:
     - python >=3.10
     - pip
+    - pynio
   run:
     - python >=3.10
     - numpy

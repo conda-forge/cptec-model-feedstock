@@ -1,5 +1,5 @@
 {% set name = "cptec-model" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,8 +7,8 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cptec-model-{{ version }}.tar.gz
-  sha256: 87ab448413b854cb42fd72f99f7e90449b15a49ec5710ecf6b8dfb375bbb38ec
-  
+  sha256: c7a5bbf9f1b3f1368d4f98a9fc97d1c1869ad094b3fd4b6256e7ae1ac45d8419
+
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -32,9 +32,9 @@ requirements:
     - dask-core
     - scipy
     - pytest ==7.1.1
-    - pytest-json-report    
-    - xesmf ==0.3.0 
-    
+    - pytest-json-report
+    - xesmf ==0.3.0
+
 test:
   imports:
     - cptecmodel

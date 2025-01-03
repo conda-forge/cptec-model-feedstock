@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "cptec-model" %}
 {% set version = "0.1.8" %}
 
@@ -6,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cptec-model-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cptec-model-{{ version }}.tar.gz
   sha256: 87ab448413b854cb42fd72f99f7e90449b15a49ec5710ecf6b8dfb375bbb38ec
   
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - pynio
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - numpy
     - pandas
     - matplotlib
@@ -42,6 +43,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://cptec-model.readthedocs.io/en/latest/index.html
